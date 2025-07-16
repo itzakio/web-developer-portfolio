@@ -231,3 +231,56 @@ footer textarea{
 footer input[type="submit"]{
     display: block;
 }
+
+/* Responsive styles */
+
+@media screen and (max-width:576px) {
+    .skills .section-description{
+        padding: 30px; 
+    }
+    .skills-container, 
+    .resume-container,
+    .banner,
+    nav,
+    nav > ul{
+        flex-direction: column;
+        
+    }
+    nav ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner-profile-image{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .nav-logo,
+    .banner,
+    .resume-column-title
+    {
+        margin:30px;
+    }
+    nav,
+    .experince,
+    .about{
+        padding: 30px;
+    }
+    footer{
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    .footer-container{
+    width: 100%;
+    }
+    
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea
+    {
+        width: 100%;
+    }
+
+
+}

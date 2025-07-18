@@ -199,7 +199,6 @@ main section{
 
 /* footer styles */
 footer{
-    
     padding: 130px 0;
     gap: 115px;
 }
@@ -289,6 +288,10 @@ footer{
         padding: 30px;
     }
 
+    footer{
+    padding: 50px 0;
+    }
+
     .footer-content{
         flex-direction: column-reverse;
         padding: 30px;
@@ -345,10 +348,17 @@ footer{
         margin-left: 20px;
     }
 
+    footer{
+    padding: 60px 0;
+    }
+
     .footer-content{
         align-items: center;
         flex-direction: column-reverse;
         padding: 0;
+    }
+    .footer-container{
+    width: 90%;
     }
     .footer-content input[type="text"],
     .footer-content input[type="email"],
@@ -389,6 +399,10 @@ footer{
         padding: 30px;
     }
 
+    footer{
+    padding:80px 0;
+    }
+
     .footer-content{
         align-items: center;
         padding: 30px;
@@ -422,6 +436,11 @@ footer{
     .resume-column{
         padding: 30px;
     }
+
+    footer{
+    padding: 100px 0;
+    }
+
     .footer-content{
         align-items: center;
         padding: 30px;

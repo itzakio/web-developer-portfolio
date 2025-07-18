@@ -131,15 +131,16 @@ main section{
 .section-description{
     margin-top: 20px;
 }
-table{
-    width: 90%;
-    margin: 40px auto 0;
-    table-layout: auto;
+.self-info{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin-top: 24px;
 }
-table th{
+.info-name{
     font-weight: 400;
 }
-table td{
+.info{
     font-weight: 700;
 }
 
@@ -234,43 +235,55 @@ footer input[type="submit"]{
 
 /* Responsive styles */
 
-@media screen and (max-width:576px) {
-    .skills .section-description{
-        padding: 30px; 
-    }
+@media (max-width:575.98px) {
     .skills-container, 
     .resume-container,
     .banner,
     nav,
-    nav > ul{
+    nav > ul,
+    .self-info{
         flex-direction: column;
         
     }
-    nav ul{
+
+    nav ul,
+    .self-info{
         gap: 20px;
     }
+
     .btn-primary{
         margin-bottom: 20px;
     }
+
     .banner-profile-image{
         width: 90%;
         margin-top: 20px;
     }
+
     .nav-logo,
     .banner,
     .resume-column-title
     {
         margin:30px;
     }
+
+
+    .resume hr{
+        margin: 0;
+    }
+
     nav,
     .experince,
-    .about{
+    .about,
+    .skills .section-description{
         padding: 30px;
     }
+
     footer{
         flex-direction: column-reverse;
         padding: 30px;
     }
+
     .footer-container{
     width: 100%;
     }
@@ -282,5 +295,59 @@ footer input[type="submit"]{
         width: 100%;
     }
 
+
+}
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    nav,
+    .banner,
+    .skills-container,
+    .resume-container,
+    nav > ul,
+    .self-info
+    {
+        flex-direction: column;
+    }
+    nav ul,
+    .self-info{
+        gap: 20px;
+    }
+    
+    nav,
+    .experince,
+    .about,
+    .skills .section-description{
+        padding: 30px;
+    }
+
+    .nav-logo,
+    .banner,
+    .resume-column-title
+    {
+        margin:30px;
+    }
+
+    .banner-profile-image{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    footer{
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+     footer input[type="text"],
+    footer input[type="email"],
+    footer textarea
+    {
+        width: 100%;
+    }
+    
+    
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){ 
 
 }

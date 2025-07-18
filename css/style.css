@@ -108,6 +108,9 @@ nav ul li a{
     font-size: 18px;
     margin-bottom: 25px;
 }
+.btn-secondary{
+        margin-left: 20px;
+    }
 .banner-profile-image{
     width: 385px;
 }
@@ -196,9 +199,15 @@ main section{
 
 /* footer styles */
 footer{
-    display: flex;
-    padding: 130px 230px;
+    
+    padding: 130px 0;
     gap: 115px;
+}
+.footer-content{
+    display: flex;
+    gap: 115px;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 .footer-container{
     width: 50%;
@@ -211,8 +220,8 @@ footer{
     display: flex;
     gap: 10px;
 }
-footer input[type="text"],
-footer input[type="email"]{
+.footer-content input[type="text"],
+.footer-content input[type="email"]{
     width: 460px;
     height: 64px;
     border: none;
@@ -221,7 +230,7 @@ footer input[type="email"]{
     font-size: 16px;
     margin-bottom: 25px;
 }
-footer textarea{
+.footer-content textarea{
     width: 460px;
     border: none;
     border-radius: 5px;
@@ -229,7 +238,7 @@ footer textarea{
     font-size: 16px;
     margin-bottom: 25px;
 }
-footer input[type="submit"]{
+.footer-content input[type="submit"]{
     display: block;
 }
 
@@ -251,8 +260,9 @@ footer input[type="submit"]{
         gap: 20px;
     }
 
-    .btn-primary{
-        margin-bottom: 20px;
+    .btn-secondary{
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .banner-profile-image{
@@ -279,7 +289,7 @@ footer input[type="submit"]{
         padding: 30px;
     }
 
-    footer{
+    .footer-content{
         flex-direction: column-reverse;
         padding: 30px;
     }
@@ -288,16 +298,16 @@ footer input[type="submit"]{
     width: 100%;
     }
     
-    footer input[type="text"],
-    footer input[type="email"],
-    footer textarea
+    .footer-content input[type="text"],
+    .footer-content input[type="email"],
+    .footer-content textarea
     {
         width: 100%;
     }
 
 
 }
-@media (min-width: 576px) and (max-width: 767.98px){ 
+@media (min-width: 576px) and (max-width: 768px){ 
     nav,
     .banner,
     .skills-container,
@@ -331,14 +341,18 @@ footer input[type="submit"]{
         margin-top: 20px;
     }
 
-    footer{
+    .btn-secondary{
+        margin-left: 20px;
+    }
+
+    .footer-content{
         align-items: center;
         flex-direction: column-reverse;
         padding: 0;
     }
-     footer input[type="text"],
-    footer input[type="email"],
-    footer textarea
+    .footer-content input[type="text"],
+    .footer-content input[type="email"],
+    .footer-content textarea
     {
         width: 100%;
     }
@@ -348,6 +362,76 @@ footer input[type="submit"]{
   
 }
 
-@media (min-width: 768px) and (max-width: 991.98px){ 
+@media (min-width: 768.1px) and (max-width: 992px){ 
+    nav,
+    .about,
+    .skills .section-description{
+        padding: 50px;
+    }
+    .banner,
+    .resume-column-title{
+        margin: 30px;
+    }
+    .self-info{
+        gap: 25px;
+    }
+    .btn-secondary{
+        margin-left: 20px ;
+        margin-top: 0;
+    }
+    .self-info,
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-container,
+    .resume-column{
+        padding: 30px;
+    }
 
+    .footer-content{
+        align-items: center;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .footer-content input[type="text"],
+    .footer-content input[type="email"],
+    .footer-content textarea
+    {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992.1px) and (max-width: 1200px){
+    nav{
+        padding:50px 100px;
+    }
+    .banner{
+        margin: 30px;
+    }
+    .btn-secondary{
+        margin-left: 20px;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-container,
+    .resume-column{
+        padding: 30px;
+    }
+    .footer-content{
+        align-items: center;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .footer-content input[type="text"],
+    .footer-content input[type="email"],
+    .footer-content textarea
+    {
+        width: 100%;
+    }
 }
